@@ -1,0 +1,40 @@
+@import "vars";
+@import "bootstrap/bootstrap";
+@import "navbar";
+
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.btn-custom-style {
+  padding: 0 60px;
+
+  background-color: $main-color;
+
+  height: 50px;
+  line-height: 50px;
+
+  border: 0 none;
+  border-radius: 5px;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  color: white;
+
+  transition: background-color 0.3s ease-in-out;
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: darken($main-color, 10%);
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.alert-animation {
+  transition: opacity 0.5s ease-in-out;
+}
